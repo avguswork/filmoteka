@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/filmoteka/static/css/main.1eb9d46e.css",
+    "main.js": "/filmoteka/static/js/main.cfab21b8.js",
+    "static/js/787.5da56637.chunk.js": "/filmoteka/static/js/787.5da56637.chunk.js",
+    "static/media/film11.jpg": "/filmoteka/static/media/film11.87bb3fb8b8318bfacf9f.jpg",
+    "static/media/film12.jpg": "/filmoteka/static/media/film12.5d462fbd6fd8a2bc3706.jpg",
+    "static/media/film7.jpg": "/filmoteka/static/media/film7.753e98ea82d4a3bf25e0.jpg",
+    "static/media/film1.jpg": "/filmoteka/static/media/film1.34d16342b949b9628868.jpg",
+    "static/media/film2.jpg": "/filmoteka/static/media/film2.8122bbfabd4ccbd5c9cd.jpg",
+    "static/media/film13.jpg": "/filmoteka/static/media/film13.57fa986743ffcdb2cb1d.jpg",
+    "static/media/film9.jpg": "/filmoteka/static/media/film9.4448b1664c230b0ae9ff.jpg",
+    "static/media/film3.jpg": "/filmoteka/static/media/film3.4786cb483ab138b4bbbf.jpg",
+    "static/media/film19.jpg": "/filmoteka/static/media/film19.0dd7df452573fda34d50.jpg",
+    "static/media/film5.jpg": "/filmoteka/static/media/film5.d3db9bed22154c2ba504.jpg",
+    "static/media/film14.jpg": "/filmoteka/static/media/film14.7785ec1b5860115c5d18.jpg",
+    "static/media/film4.jpg": "/filmoteka/static/media/film4.dcb6dd6b0335e42b97ac.jpg",
+    "static/media/film18.jpg": "/filmoteka/static/media/film18.fbbaec7122d4084d9d38.jpg",
+    "static/media/film15.jpg": "/filmoteka/static/media/film15.387eb94be1bca5ba0364.jpg",
+    "static/media/film8.jpg": "/filmoteka/static/media/film8.bc0c4c6613f1baa8374f.jpg",
+    "static/media/film20.jpg": "/filmoteka/static/media/film20.d0c447e18a735ae8d77e.jpg",
+    "static/media/film10.jpg": "/filmoteka/static/media/film10.b41ed049a2c8ff5ec25a.jpg",
+    "static/media/film16.jpg": "/filmoteka/static/media/film16.fd04c426888a9e539741.jpg",
+    "static/media/film17.jpg": "/filmoteka/static/media/film17.64af6b693a4c08a4ceb2.jpg",
+    "static/media/film6.jpg": "/filmoteka/static/media/film6.8bd1836cd501e88593e7.jpg",
+    "index.html": "/filmoteka/index.html",
+    "main.1eb9d46e.css.map": "/filmoteka/static/css/main.1eb9d46e.css.map",
+    "main.cfab21b8.js.map": "/filmoteka/static/js/main.cfab21b8.js.map",
+    "787.5da56637.chunk.js.map": "/filmoteka/static/js/787.5da56637.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1eb9d46e.css",
+    "static/js/main.cfab21b8.js"
+  ]
+}
