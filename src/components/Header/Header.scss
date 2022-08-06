@@ -1,0 +1,14 @@
+@import "../../style.scss";
+
+.header{
+    @include flex-column;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient( black, white);
+    border-width:  2px;
+    border-style: solid;
+    border-image: linear-gradient(to top, rgb(255, 255, 255), grey) 1;
+}
+
+
+

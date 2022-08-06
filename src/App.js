@@ -1,11 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import "./style.scss"
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Video from './pages/Video';
+import Films from './pages/Films';
+import Home from './pages/Home';
+import Series from './pages/Series';
+import Cartoons from './pages/Cartoons';
+
 
 function App() {
   return (
-    <div className="App">
+    <div className='site'>
+    <BrowserRouter>
+      <Routes>
+        <Route path='filmoteka/*' element = {<Home />} />
+        <Route path='filmoteka/films' element = {<Films />} />
+        <Route path='filmoteka/series' element = {<Series />} />
+        <Route path='filmoteka/cartoons' element = {<Cartoons />} />
+        <Route path='filmoteka/video/:id' element = {<Video />}/>
+      </Routes>
+    </BrowserRouter>
+    </div>
+  )
+}
+
+export default App;
+
+
+/*
+
+<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
@@ -52,7 +76,5 @@ function App() {
         </span>
       </header>
     </div>
-  );
-}
 
-export default App;
+*/

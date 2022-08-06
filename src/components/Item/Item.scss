@@ -1,0 +1,31 @@
+@import "../../style.scss";
+
+
+.film_card_block{
+    width: 220px;
+    height: 450px;
+    @include flex-column;
+    border-radius: 25px;
+    background: linear-gradient(white, black );
+    border-width:  2px;
+    border-style: solid;
+    border-image: linear-gradient(to top, rgb(255, 255, 255), rgb(255, 255, 255)) 1;
+    color: white;
+}
+
+.film_card_button{
+    margin: 20px 0px 10px 0px;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    &:hover{
+        color: red;
+    }
+}
+
+.date_text{
+    font-size: 15px;
+    margin: 5px;
+}

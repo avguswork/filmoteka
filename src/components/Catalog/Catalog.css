@@ -1,0 +1,22 @@
+.site {
+  width: 100wc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.catalog_block {
+  margin: 100px 0px;
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: start;
+  row-gap: 50px;
+  column-gap: 50px;
+}

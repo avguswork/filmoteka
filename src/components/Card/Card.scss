@@ -1,0 +1,86 @@
+@import "../../style.scss";
+
+
+
+
+.сard{
+    margin: 100px 0;
+    width: 100%;
+    max-width: $wc;
+    @include flex-row;
+    justify-content: space-around;
+
+    &_column{
+        width: 100%;
+        @include flex-column;
+        justify-content: space-around;
+        
+
+        &_row{
+            text-align: start;
+            width: 100%;
+            @include flex-row;
+            justify-content: space-around;
+        }
+    }
+}
+
+.modal{
+    width: 100%;
+    height: 85%;
+    @include flex-column;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    visibility: hidden;
+    opacity: 0;
+    
+    
+
+    &_closeButton{
+        width: 100%;
+        max-width: $wc;
+        @include flex-row;
+        justify-content: end;        
+    }
+
+    &_window{
+        width: 100%;
+        max-width: $wc;
+        @include flex-column;
+    }
+}
+
+.openModal{
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px;
+    font-size: 20px;
+    color: red;
+    &:hover{
+        color: green;
+        cursor: pointer;
+    }
+}
+
+.closeButton{
+    font-size: 25px;
+    color: white;
+    background-color: unset;
+    cursor: pointer;
+    &:hover{
+        color: red;
+    }
+}
+
+
+
+.visible{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+

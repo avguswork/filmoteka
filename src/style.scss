@@ -1,0 +1,40 @@
+
+
+
+$wc: 1024px;
+
+@mixin flex-row(){
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin flex-column(){
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin grid($a, $gap){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($a, 1fr));
+    grid-gap: $gap;
+    grid-auto-flow: dense;
+}
+
+.site{
+    width: 100wc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.wraper{
+    width: 100%;
+    height: 100vh;
+    @include flex-column;
+    justify-content: space-between;
+    
+}
+

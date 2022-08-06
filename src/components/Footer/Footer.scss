@@ -1,0 +1,16 @@
+@import "../../style.scss";
+
+
+.footer_block{
+    
+    @include flex-row;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    height: 50px;
+    background: linear-gradient(  white, black,);
+    border-width:  2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, rgb(255, 255, 255), grey) 1;
+    
+}

@@ -1,0 +1,36 @@
+@import "../../style.scss";
+
+.navy{
+    width: 100%;
+    max-width: $wc;
+    @include flex-row;
+    justify-content: space-around;
+    
+}
+
+.logo{
+    color: red;
+    font-size: 30px;
+}
+
+.button_menu{
+    @include flex-row;
+    justify-content: space-around;
+}
+
+.header_button{
+    color: white;
+    border: hidden;
+    background-color: unset;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 20px;
+
+    &:hover{
+        color: red;
+    }
+}
+
+.search_block{
+    width: 200px;
+}
