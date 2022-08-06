@@ -7,11 +7,11 @@ const Cartoons = () => {
     const category = 'cartoons'
     console.log(category)
     return(
-        <>
+        <div className="wraper">
             <Header />
             <Catalog category={category}/>
             <Footer />
-        </>
+        </div>
     )
 }
 

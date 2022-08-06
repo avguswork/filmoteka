@@ -6,7 +6,6 @@ import Data from "../../Data";
 const openModal = () => {
     const modal = document.querySelector('#modal')
     modal.classList.toggle('visible')
-    console.log('open')
 }
 
 const Card = () => {
