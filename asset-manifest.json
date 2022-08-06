@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/filmoteka/static/css/main.85cba888.css",
-    "main.js": "/filmoteka/static/js/main.840d8f79.js",
+    "main.css": "/filmoteka/static/css/main.d22055b3.css",
+    "main.js": "/filmoteka/static/js/main.496fde84.js",
     "static/js/787.5da56637.chunk.js": "/filmoteka/static/js/787.5da56637.chunk.js",
     "static/media/film11.jpg": "/filmoteka/static/media/film11.87bb3fb8b8318bfacf9f.jpg",
     "static/media/film12.jpg": "/filmoteka/static/media/film12.5d462fbd6fd8a2bc3706.jpg",
     "static/media/film7.jpg": "/filmoteka/static/media/film7.753e98ea82d4a3bf25e0.jpg",
     "static/media/film1.jpg": "/filmoteka/static/media/film1.34d16342b949b9628868.jpg",
     "static/media/film2.jpg": "/filmoteka/static/media/film2.8122bbfabd4ccbd5c9cd.jpg",
+    "static/media/film21.jpg": "/filmoteka/static/media/film21.a52620d226acb39e7580.jpg",
     "static/media/film13.jpg": "/filmoteka/static/media/film13.57fa986743ffcdb2cb1d.jpg",
     "static/media/film9.jpg": "/filmoteka/static/media/film9.4448b1664c230b0ae9ff.jpg",
     "static/media/film3.jpg": "/filmoteka/static/media/film3.4786cb483ab138b4bbbf.jpg",
@@ -24,12 +25,12 @@
     "static/media/film17.jpg": "/filmoteka/static/media/film17.64af6b693a4c08a4ceb2.jpg",
     "static/media/film6.jpg": "/filmoteka/static/media/film6.8bd1836cd501e88593e7.jpg",
     "index.html": "/filmoteka/index.html",
-    "main.85cba888.css.map": "/filmoteka/static/css/main.85cba888.css.map",
-    "main.840d8f79.js.map": "/filmoteka/static/js/main.840d8f79.js.map",
+    "main.d22055b3.css.map": "/filmoteka/static/css/main.d22055b3.css.map",
+    "main.496fde84.js.map": "/filmoteka/static/js/main.496fde84.js.map",
     "787.5da56637.chunk.js.map": "/filmoteka/static/js/787.5da56637.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.85cba888.css",
-    "static/js/main.840d8f79.js"
+    "static/css/main.d22055b3.css",
+    "static/js/main.496fde84.js"
   ]
 }
