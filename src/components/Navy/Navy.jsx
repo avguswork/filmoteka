@@ -47,7 +47,7 @@ const Navy = () => {
                     
                     {buttonCategory.map((button) => {
                         return (
-                            <Link to={`/filmoteka/${button.name}`}> 
+                            <Link to={`/filmoteka/${button.name}`} key={button.name}> 
                                 <button key={button.id} name={button.name} className="header_button">{button.value}</button> 
                             </Link>)
                     })}

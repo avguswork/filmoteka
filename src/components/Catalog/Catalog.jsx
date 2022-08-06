@@ -6,7 +6,7 @@ import {useSearchParams} from "react-router-dom";
 
 const Catalog = (props) => {
 
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams] = useSearchParams();
     const category = props.category;
     
     let videoCatalog
