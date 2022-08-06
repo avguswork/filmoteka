@@ -1,6 +1,6 @@
 import React from "react";
 import  "./Navy.scss";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
 const buttonCategory = [
 
@@ -30,6 +30,15 @@ const buttonCategory = [
 ]
 
 const Navy = () => {
+    const [searchParams, setSearchParams] = useSearchParams();
+    const SetSearchParam = (event) => {
+        const setParams = searchParams.get("search") || ""
+            let search = event.target.value;
+            if (search) {
+              setSearchParams({ search });
+            } else {
+              setSearchParams({});
+            }}
     return(
         <>  
             <div className="navy">
@@ -45,7 +54,7 @@ const Navy = () => {
                 </div>
                 <div className="search_block">
                     <form >
-                        <input type="search" placeholder="Search.." />
+                        <input type="search" placeholder="Search.."  onChange={SetSearchParam}/>
                     </form>
                     
                 </div>
