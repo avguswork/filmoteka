@@ -40,7 +40,7 @@ const Card = () => {
                     <button className="closeButton" onClick={openModal}>X</button>
                 </div>
                 <div className="modal_window">
-                    <iframe width="800" height="470" src={video.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="600px" src={video.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </section>
         </div>

@@ -12,6 +12,7 @@
 
     &_column{
         width: 100%;
+        padding: 0px 10px;
         @include flex-column;
         justify-content: space-around;
         
@@ -19,11 +20,23 @@
         &_row{
             text-align: start;
             width: 100%;
+            margin: 10px 0px;
             @include flex-row;
             justify-content: space-around;
         }
     }
+    @media(max-width: 800px){
+        &{
+            @include flex-column;
+        }
+        &_column{
+            width: 90%;
+        }
+        
+    }
 }
+
+
 
 .modal{
     width: 100%;
@@ -57,6 +70,7 @@
     border-radius: 50px;
     box-shadow: 0px 0px 5px;
     font-size: 20px;
+    margin-top: 50px;
     color: red;
     &:hover{
         color: green;

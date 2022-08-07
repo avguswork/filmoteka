@@ -2,9 +2,9 @@
 
 .header{
     @include flex-column;
-    
+
     width: 100%;
-    height: 180px;
+    height: 150px;
     background: linear-gradient( black, white);
     border-width:  2px;
     border-style: solid;

@@ -1,21 +1,31 @@
 @import "../../style.scss";
 
+
 .navy{
     width: 100%;
+    height: max-content;
     max-width: $wc;
     @include flex-row;
+    padding-top: 10px;
     justify-content: space-around;
+    
     
 }
 
 .logo{
     color: red;
     font-size: 30px;
+    box-shadow: 0px 0px 10px;
+    border-radius: 25px;
+    padding: 5px 10px;
+    text-shadow: 0px 0px 3px white;
 }
 
-.button_menu{
+.button_block{
     @include flex-row;
     justify-content: space-around;
+    visibility: visible;
+    opacity: 1;
 }
 
 .header_button{
@@ -23,9 +33,9 @@
     border: hidden;
     background-color: unset;
     cursor: pointer;
-    margin: 0 10px;
+    margin: 10px 10px;
     font-size: 20px;
-
+    
     &:hover{
         color: red;
     }
@@ -35,11 +45,64 @@
     width: 200px;
 }
 
-@media(max-width: 920px){
+.burger_menu{
+    width: 100%;
+    height: max-content;
+    @include flex-column;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    margin-top: 70px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.burger_button{
+    color: white;
+    border: hidden;
+    background-color: unset;
+    cursor: pointer;
+    margin: 10px 10px;
+    font-size: 20px;
+    visibility: hidden;
+    opacity: 0;
+
+    &:hover{
+        color: red;
+    }
+}
+
+@media(max-width: 980px){
     .navy{
         @include flex-column;
     }
     .search_block{
-        margin: 20px 0;
+        margin: 10px 0px 0px 10px ;
+    }
+    
+
+    
+}
+
+@media(max-width: 600px){
+    .button_block{
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    } 
+
+    .burger_button{
+        
+        visibility: visible;
+        opacity: 1;
+
     }
 }
+
+
+
+.visible{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.8s;
+}
+

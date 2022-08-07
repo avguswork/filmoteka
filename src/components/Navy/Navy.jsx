@@ -2,6 +2,11 @@ import React from "react";
 import  "./Navy.scss";
 import { Link, useSearchParams } from "react-router-dom";
 
+const burgerMenu = () => {
+    const menu = document.querySelector('#menu')
+    menu.classList.toggle('visible')
+}
+
 const buttonCategory = [
 
     {
@@ -39,12 +44,13 @@ const Navy = () => {
             } else {
               setSearchParams({});
             }}
+
+            
     return(
         <>  
             <div className="navy">
                 <h2 className="logo">FILM📹OTEKA</h2>
-                <div className="button_menu">
-                    
+                <div className="button_block" id="buttonBlock">
                     {buttonCategory.map((button) => {
                         return (
                             <Link to={`/filmoteka/${button.name}`} key={button.name}> 
@@ -52,14 +58,22 @@ const Navy = () => {
                             </Link>)
                     })}
                 </div>
+                
                 <div className="search_block">
                     <form >
                         <input type="search" placeholder="Search.."  onChange={SetSearchParam}/>
                     </form>
-                    
+                </div>  
+                <button className="burger_button" onClick={burgerMenu}>☰</button>
+                <div className="burger_menu" id="menu">
+                    {buttonCategory.map((button) => {
+                        return (
+                            <Link to={`/filmoteka/${button.name}`} key={button.name}> 
+                                <button key={button.id} name={button.name} className="header_button">{button.value}</button> 
+                            </Link>)
+                    })}
+                    <button className="header_button" onClick={burgerMenu}>X</button>
                 </div>
-                    
-                
             </div>
             
         </>
