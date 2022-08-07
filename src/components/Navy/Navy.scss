@@ -34,3 +34,12 @@
 .search_block{
     width: 200px;
 }
+
+@media(max-width: 920px){
+    .navy{
+        @include flex-column;
+    }
+    .search_block{
+        margin: 20px 0;
+    }
+}
