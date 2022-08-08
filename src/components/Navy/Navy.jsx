@@ -61,7 +61,7 @@ const Navy = () => {
                 
                 <div className="search_block">
                     <form >
-                        <input type="search" placeholder="Search.."  onChange={SetSearchParam}/>
+                        <input type="search" className="search" placeholder="Search.."  onChange={SetSearchParam}/>
                     </form>
                 </div>  
                 <button className="burger_button" onClick={burgerMenu}>☰</button>

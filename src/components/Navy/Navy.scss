@@ -3,7 +3,7 @@
 
 .navy{
     width: 100%;
-    height: max-content;
+    
     max-width: $wc;
     @include flex-row;
     padding-top: 10px;
@@ -43,6 +43,11 @@
 
 .search_block{
     width: 200px;
+    
+}
+
+.search{
+    font-size: 15px;
 }
 
 .burger_menu{
