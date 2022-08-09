@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  column-gap: 20px;
 }
 
 @media (max-width: 800px) {

@@ -22,7 +22,7 @@
             width: 100%;
             margin: 10px 0px;
             @include flex-row;
-            justify-content: space-around;
+            column-gap: 20px;
         }
     }
     @media(max-width: 800px){

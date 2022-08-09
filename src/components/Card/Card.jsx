@@ -21,7 +21,7 @@ const Card = () => {
     return(
         <div className="сard">
             <div className="сard_column">
-                <img src={require(`../../image/Large/${video.image}`)} alt={video.name}/>
+                <img src={require(`../../image/Large/${video.image}`)} alt={video.name} width="300px" height="450px"/>
             </div>
             
             <div className="сard_column">
@@ -29,6 +29,10 @@ const Card = () => {
                 <div className="сard_column_row">
                     <h4>Дата</h4>
                     <h5>{video.date}</h5>
+                </div>
+                <div className="сard_column_row">
+                    <h4>Жанр</h4>
+                    <h5>{video.genre}</h5>
                 </div>
                 <div className="сard_column_row">
                     <h5>{video.description}</h5>
