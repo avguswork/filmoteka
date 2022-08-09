@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/filmoteka/static/css/main.fa4f486a.css",
-    "main.js": "/filmoteka/static/js/main.409d3e11.js",
+    "main.css": "/filmoteka/static/css/main.59f52756.css",
+    "main.js": "/filmoteka/static/js/main.7a16175b.js",
     "static/js/787.5da56637.chunk.js": "/filmoteka/static/js/787.5da56637.chunk.js",
     "static/media/film11.jpg": "/filmoteka/static/media/film11.87bb3fb8b8318bfacf9f.jpg",
     "static/media/film12.jpg": "/filmoteka/static/media/film12.5d462fbd6fd8a2bc3706.jpg",
@@ -25,12 +25,12 @@
     "static/media/film17.jpg": "/filmoteka/static/media/film17.64af6b693a4c08a4ceb2.jpg",
     "static/media/film6.jpg": "/filmoteka/static/media/film6.8bd1836cd501e88593e7.jpg",
     "index.html": "/filmoteka/index.html",
-    "main.fa4f486a.css.map": "/filmoteka/static/css/main.fa4f486a.css.map",
-    "main.409d3e11.js.map": "/filmoteka/static/js/main.409d3e11.js.map",
+    "main.59f52756.css.map": "/filmoteka/static/css/main.59f52756.css.map",
+    "main.7a16175b.js.map": "/filmoteka/static/js/main.7a16175b.js.map",
     "787.5da56637.chunk.js.map": "/filmoteka/static/js/787.5da56637.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa4f486a.css",
-    "static/js/main.409d3e11.js"
+    "static/css/main.59f52756.css",
+    "static/js/main.7a16175b.js"
   ]
 }
