@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, form, input, button {
   padding: 0;
   margin: 0;
 }
@@ -18,14 +18,4 @@ h1, h2, h3, h4, h5, h6, p {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-}
-
-.visible {
-  visibility: visible;
-  opacity: 1;
-}
-
-.invisible {
-  visibility: hidden;
-  opacity: 0;
 }

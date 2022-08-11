@@ -12,26 +12,24 @@ const buttonCategory = [
     {
         id: 1,
         name: 'home',
-        value: 'Главная',
+        value: 'Головна',
     },
     
     {
         id: 1,
         name: 'films',
-        value: 'Фильмы',
+        value: 'Фільми',
     },
     {
         id: 2,
         name: 'series',
-        value: 'Сериалы',
+        value: 'Серіали',
     },
     {
         id: 3,
         name: 'cartoons',
-        value: 'Мультфильмы',
+        value: 'Мультики',
     },
-    
-
 ]
 
 const Navy = () => {
@@ -46,37 +44,36 @@ const Navy = () => {
             }}
 
             
-    return(
-        <>  
-            <div className="navy">
-                <h2 className="logo">FILM📹OTEKA</h2>
-                <div className="button_block" id="buttonBlock">
-                    {buttonCategory.map((button) => {
-                        return (
-                            <Link to={`/filmoteka/${button.name}`} key={button.name}> 
-                                <button key={button.id} name={button.name} className="header_button">{button.value}</button> 
-                            </Link>)
-                    })}
-                </div>
-                
-                <div className="search_block">
-                    <form >
-                        <input type="search" className="search" placeholder="Search.."  onChange={SetSearchParam}/>
-                    </form>
-                </div>  
-                <button className="burger_button" onClick={burgerMenu}>☰</button>
-                <div className="burger_menu" id="menu">
-                    {buttonCategory.map((button) => {
-                        return (
-                            <Link to={`/filmoteka/${button.name}`} key={button.name}> 
-                                <button key={button.id} name={button.name} className="header_button">{button.value}</button> 
-                            </Link>)
-                    })}
-                    <button className="header_button" onClick={burgerMenu}>X</button>
-                </div>
+    return( 
+        <div className="navy">
+            <h2 className="logo">FILM📹OTEKA</h2>
+            <div className="button_block" id="buttonBlock">
+                {buttonCategory.map((button) => {
+                    return (
+                        <Link to={`/filmoteka/${button.name}`} key={button.name}> 
+                             <button key={button.id} name={button.name} className="navy_button">{button.value}</button> 
+                        </Link>)
+                })}
             </div>
+                
+            <div className="search_block">
+                <form >
+                    <input type="search" className="search" placeholder="Пошук.."  onChange={SetSearchParam}/>
+                </form>
+            </div>  
+            <button className="burger_button" onClick={burgerMenu}>☰</button>
+            <div className="burger_menu" id="menu">
+                {buttonCategory.map((button) => {
+                    return (
+                        <Link to={`/filmoteka/${button.name}`} key={button.name}> 
+                            <button key={button.id} name={button.name} className="navy_button">{button.value}</button> 
+                        </Link>)
+                })}
+                <button className="header_button" onClick={burgerMenu}>X</button>
+            </div>
+        </div>
             
-        </>
+        
     )
 }
 

@@ -1,0 +1,35 @@
+@import "../../style.scss";
+@import "../../font.scss";
+
+
+.genre{
+    padding: 20px 0px;
+    width: 100%;
+    max-width: $wc - 200px;
+    @include flex-column;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 1), rgba(0, 0, 0, 0.1));
+    border: ridge;
+    border-radius: 25px 25px 25px 25px;
+    font-family: 'Gabriela', serif;
+    font-size: 20px;
+    
+    &_row{
+        width: 100%;
+        margin-top: 10px;
+        @include flex-row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &_button{
+        border: none;
+        cursor: pointer;
+        background-color: unset;
+        font-family: 'Caveat', cursive;
+        font-size: 25px;
+        margin: 0px 10px;
+        &:hover{
+            color: red;
+        }
+    }
+}

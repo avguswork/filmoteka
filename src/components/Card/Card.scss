@@ -6,7 +6,7 @@
 .сard{
     margin: 100px 0;
     width: 100%;
-    max-width: $wc;
+    max-width: $wc - 200px;
     @include flex-row;
     justify-content: space-around;
 

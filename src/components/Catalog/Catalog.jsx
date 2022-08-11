@@ -8,29 +8,29 @@ const Catalog = (props) => {
 
     const [searchParams] = useSearchParams();
     const category = props.category;
+    let videoCatalog = Data.filter( element => element )
     
-    let videoCatalog
-    
-
     const Search = () => {
-        let search = searchParams.get("search");
-        if(category === ''){
-            videoCatalog = Data.filter( element => element );
-       }
-       else{
+        if(category){
            videoCatalog = Data.filter( element => element.category === category );
        }
-      if(search){
-        videoCatalog  = Data.filter(element => {
-          return  element.name.toLowerCase().startsWith(search.toLowerCase());
-      })}
+        let genres = searchParams.get("genre");
+        let search = searchParams.get("search");
+        if(search){
+            videoCatalog  = Data.filter(element =>  element.name.toLowerCase().startsWith(search.toLowerCase()))
+        }
+        else if(genres){
+            videoCatalog = videoCatalog.filter(element => element.genre.find(elem => elem === genres))
+          }
     }
-     
     
     return(
-        <div className="catalog_block">
-            {Search()}
-           { videoCatalog.map( video => (<Item video={video} key={video.id}/>)) }
+        <div className="catalog">
+            
+            <div className="catalog_block">
+                {Search()}
+                { videoCatalog.map( video => (<Item video={video} key={video.id}/>)) }
+            </div>
         </div>
     )
 }

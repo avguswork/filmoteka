@@ -1,5 +1,5 @@
 @charset "UTF-8";
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, form, input, button {
   padding: 0;
   margin: 0;
 }
@@ -21,20 +21,10 @@ h1, h2, h3, h4, h5, h6, p {
   justify-content: space-between;
 }
 
-.visible {
-  visibility: visible;
-  opacity: 1;
-}
-
-.invisible {
-  visibility: hidden;
-  opacity: 0;
-}
-
 .сard {
   margin: 100px 0;
   width: 100%;
-  max-width: 1024px;
+  max-width: 824px;
   display: flex;
   flex-direction: row;
   align-items: center;

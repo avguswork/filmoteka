@@ -3,22 +3,23 @@
 
 .navy{
     width: 100%;
-    
     max-width: $wc;
     @include flex-row;
     padding-top: 10px;
     justify-content: space-around;
-    
-    
+    z-index: 1;
+ 
 }
 
 .logo{
     color: red;
-    font-size: 30px;
+    font-size: 25px;
     box-shadow: 0px 0px 10px;
     border-radius: 25px;
-    padding: 0px 8px;
+    padding: 0px 8px 0px 8px;
     text-shadow: 0px 0px 3px white;
+    font-family: 'Train One', cursive;
+    
 }
 
 .button_block{
@@ -28,13 +29,15 @@
     opacity: 1;
 }
 
-.header_button{
+.navy_button{
     color: white;
-    border: hidden;
+    border: none;
     background-color: unset;
     cursor: pointer;
     margin: 10px 10px;
     font-size: 20px;
+    font-family: 'Alice', serif;
+    
     
     &:hover{
         color: red;
@@ -42,39 +45,34 @@
 }
 
 .search_block{
-    width: 200px;
     @include flex-row;
     justify-content: center;
 }
 
 .search{
-    font-size: 18px;
-    
+    font-size: 18px;   
 }
-
-
 
 .burger_menu{
     width: 100%;
-    height: max-content;
     @include flex-column;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     position: absolute;
-    margin-top: 70px;
+    padding-top: 75px;
     visibility: hidden;
     opacity: 0;
+    justify-content: space-around;
 }
 
 .burger_button{
     color: white;
-    border: hidden;
+    border: none;
     background-color: unset;
     cursor: pointer;
-    margin: 10px 10px;
     font-size: 20px;
     visibility: hidden;
     opacity: 0;
-
+    display: none;
     &:hover{
         color: red;
     }
@@ -86,7 +84,7 @@
         align-items: center;
     }
     .search_block{
-        margin: 10px 0px 10px 0px ;
+        margin: 20px 0px 10px 0px ;
     }
     
 
@@ -101,7 +99,7 @@
     } 
 
     .burger_button{
-        
+        display: block;
         visibility: visible;
         opacity: 1;
 
