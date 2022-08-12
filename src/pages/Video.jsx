@@ -9,7 +9,6 @@ const Video = () => {
     return(
         <div className="wraper">  
             <Header />
-            <Genre />
             <Card />
             <Footer />
         </div>
