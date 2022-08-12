@@ -14,9 +14,8 @@ const Genre = () => {
             setSearchParams({ genre });
         } else {
             setSearchParams({});
-        }
-        
-}
+        }   
+    }
     return(
         <>
 

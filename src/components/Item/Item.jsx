@@ -12,8 +12,9 @@ const Item = (props) => {
     return(
         <div className="film_card_block">
             <Link to={`/filmoteka/video/${id}`}><img src={require(`../../image/${image}`)} alt={name}/></Link>
-            <Link to={`/filmoteka/video/${id}`}><button className="film_card_button">{name}</button></Link>
             <p className="date_text">{date}</p>
+            <Link to={`/filmoteka/video/${id}`}><button className="film_card_button">{name}</button></Link>
+            
             <Outlet />
         </div>
     )

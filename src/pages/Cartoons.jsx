@@ -6,7 +6,7 @@ import Header from "../components/Header/Header";
 
 const Cartoons = () => {
     const category = 'cartoons'
-    console.log(category)
+    
     return(
         <div className="wraper">
             <Header />
