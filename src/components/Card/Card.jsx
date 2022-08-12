@@ -32,7 +32,7 @@ const Card = () => {
                 </div>
                 <div className="сard_column_row">
                     <h4>Жанр</h4>
-                    <h5>{video.genre}</h5>
+                    <h5>{video.genre.map(element => element + ' ')}</h5>
                 </div>
                 <div className="сard_column_row">
                     <h5>{video.description}</h5>
