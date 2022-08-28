@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-//import counterReducer from '../features/counter/counterSlice';
+import videoReducer from './videoSlice';
 
 export const store = configureStore({
   reducer: {
-    //counter: counterReducer,
+    addvideos: videoReducer,
   },
 });

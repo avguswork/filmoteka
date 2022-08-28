@@ -11,7 +11,7 @@ const buttonCategory = [
 
     {
         id: 1,
-        name: 'home',
+        name: '',
         value: 'Головна',
     },
     

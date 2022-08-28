@@ -1,0 +1,91 @@
+@import '../../style.scss';
+
+.admin{
+    @include flex-column;
+
+
+    &_row{
+        @include flex-row;
+        margin: 20px 0px;
+        width: $wc - 500px;
+        justify-content: space-around;
+        background-color: grey;
+        padding: 10px;
+        border-radius: 25px;
+
+        &_button{
+            font-size: 15px;
+            border-radius: 25px;
+            padding: 5px;
+            margin: 0px 10px;
+            cursor: pointer;
+
+            &:hover{
+                border-color: white;
+            }
+
+            &:active{
+                border-color: greenyellow;
+            }
+        }
+    }
+
+    &_form{
+        width: 100%;
+        max-width: $wc;
+        @include flex-column;
+        background-color: rgba(95, 158, 160, 0.541);
+        border-radius: 25px;
+        margin: 20px;
+        padding: 20px;
+
+        &_label{
+            @include flex-row;
+            justify-content: start;
+            width: 100%;
+            margin: 20px 0px 20px 30px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        &_input{
+            margin-left: 10px;
+            width: max-content;
+        }
+
+        &_select{
+            margin: 15px;
+        }
+
+        &_textarea{
+            margin-left: 10px;
+            width: 80%;
+            height: 200px;
+
+        }
+
+        &_genre{
+            @include flex-row;
+            background-color: rgba(0, 0, 0, 0.2);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    
+}
+
+.red{
+    background-color: red;
+    color: white;
+}
+
+.blue{
+    background-color: blue;
+    color: white;
+}
+
+.green{
+    background-color: green;
+    color: white;
+}

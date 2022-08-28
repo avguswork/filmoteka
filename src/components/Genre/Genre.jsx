@@ -2,7 +2,7 @@ import React from "react";
 import "./Genre.scss";
 import { useSearchParams } from "react-router-dom";
 
-const categoryButon = [ 'Бойовик', 'Пригоди', 'Фентезі', 'Фантастика', 'Сімейний', 'Мультфільм', 'Драма', 'Трилер', 'Жахи', 'Кримінал', ]
+const categoryButon = [ 'Бойовик', 'Пригоди', 'Фентезі', 'Фантастика', 'Сімейний', 'Драма', 'Трилер', 'Жахи', 'Кримінал', ]
 
 const Genre = () => {
     const [searchParams, setSearchParams] = useSearchParams()

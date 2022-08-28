@@ -12,6 +12,7 @@ const Catalog = (props) => {
     let videoCatalog = Data.filter( element => element )
     
     const Search = () => {
+        
         if(props.category){videoCatalog = Data.filter( element => element.category === props.category )};
         let search = searchParams.get("search");
         if(search){
@@ -21,9 +22,12 @@ const Catalog = (props) => {
         if(genres){
             videoCatalog = videoCatalog.filter(element => element.genre.find(elem => elem === genres))
           }
+        
+    }
+    const Sorting = () => {
         let sort = searchParams.get("sort")
         if(sort === 'date'){
-             videoCatalog.sort((a, b) => moment(a.date, 'DD.MM.YYYY') - moment(b.date, 'DD.MM.YYYY'))  
+            videoCatalog.sort((a, b) => moment(a.date, 'DD.MM.YYYY') - moment(b.date, 'DD.MM.YYYY'))  
         }
         else if(sort === 'name'){
             videoCatalog.sort((x, y) => {if (x.name < y.name) {return -1;} return 0;}) 
@@ -35,6 +39,7 @@ const Catalog = (props) => {
             
             <div className="catalog_block">
                 {Search()}
+                {Sorting()}
                 { videoCatalog.map( video => (<Item video={video} key={video.id}/>)) }
             </div>
         </div>
